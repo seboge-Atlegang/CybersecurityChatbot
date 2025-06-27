@@ -2,6 +2,8 @@
 
 YouTube Unlised video:
 https://youtu.be/ZNXjCpA3hlY
+GitHub repostory:
+https://github.com/seboge-Atlegang/CybersecurityChatbot.git
 
 Here's a short and clear summary you can use for your report or presentation:
 
