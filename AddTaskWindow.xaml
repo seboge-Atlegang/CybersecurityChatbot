@@ -1,0 +1,53 @@
+﻿<Window x:Class="CybersecurityChatbot.AddTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Cybersecurity Task"
+        Height="350" Width="500"
+        Background="#FFFCE4EC"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Task Title -->
+        <TextBlock Text="Title:" Foreground="Black" FontWeight="Bold"
+                   Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="TitleTextBox" Grid.Row="0" Grid.Column="1" Margin="5"
+                 Background="White" BorderBrush="#FFEC407A" Foreground="Black" />
+
+        <!-- Task Description -->
+        <TextBlock Text="Description:" Foreground="Black" FontWeight="Bold"
+                   Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Top"/>
+        <TextBox x:Name="DescriptionTextBox" Grid.Row="1" Grid.Column="1" Margin="5"
+                 Height="80" AcceptsReturn="True" TextWrapping="Wrap"
+                 Background="White" BorderBrush="#FFF06292" Foreground="Black" />
+
+        <!-- Reminder Date -->
+        <TextBlock Text="Reminder Date:" Foreground="Black" FontWeight="Bold"
+                   Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <DatePicker x:Name="ReminderDatePicker" Grid.Row="2" Grid.Column="1" Margin="5"
+                    BorderBrush="#FFE91E63" />
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal"
+                    HorizontalAlignment="Right" Margin="5">
+            <Button Content="Add Task" Width="100" Margin="5"
+                    Click="AddTask_Click"
+                    Background="#FFEC407A" Foreground="Black" BorderBrush="#FFD81B60" />
+            <Button Content="Cancel" Width="100" Margin="5"
+                    Click="Cancel_Click"
+                    Background="#FFF48FB1" Foreground="Black" BorderBrush="#FFC2185B" />
+        </StackPanel>
+    </Grid>
+</Window>

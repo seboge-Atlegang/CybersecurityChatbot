@@ -1,0 +1,60 @@
+﻿<Window x:Class="CybersecurityChatbot.QuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cybersecurity Quiz"
+        Height="450" Width="700"
+        Background="#FFF5F7FB"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Text="Cybersecurity Mini-Quiz"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="Black"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Question and Answers -->
+        <StackPanel Grid.Row="1">
+            <TextBlock x:Name="QuestionTextBlock"
+                       FontSize="18"
+                       TextWrapping="Wrap"
+                       Foreground="Black"
+                       Margin="0,0,0,10" />
+
+            <!-- Where dynamic answer buttons go -->
+            <StackPanel x:Name="AnswerButtonsPanel"
+                        Orientation="Vertical"
+                        Margin="0,0,0,10" />
+
+            <!-- Feedback -->
+            <TextBlock x:Name="FeedbackTextBlock"
+                       FontSize="16"
+                       FontWeight="SemiBold"
+                       Foreground="DarkMagenta"
+                       Visibility="Collapsed"
+                       TextWrapping="Wrap"
+                       Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <!-- Next button -->
+        <Button x:Name="NextQuestionButton"
+                Grid.Row="2"
+                Content="Next Question"
+                Width="150"
+                Height="35"
+                Background="#FFDEA5D4"
+                Foreground="Black"
+                FontWeight="Bold"
+                Click="NextQuestionButton_Click"
+                HorizontalAlignment="Right"
+                Margin="0,20,0,0"/>
+    </Grid>
+</Window>
+
