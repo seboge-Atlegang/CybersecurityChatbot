@@ -1,7 +1,7 @@
 # CybersecurityChatbot
 
 YouTube Unlised video:
-https://youtu.be/ZNXjCpA3hlY
+https://youtu.be/Kpc4OSw0oEE
 GitHub repostory:
 https://github.com/seboge-Atlegang/CybersecurityChatbot.git
 
@@ -16,17 +16,18 @@ This is a **WPF-based C# application** designed to **educate users about cyberse
 Key Features
 
 Chatbot with Smart Responses**: Uses keyword and sentiment detection to answer cybersecurity questions (e.g., phishing, passwords, scams).
-Task Assistant**: Lets users add cybersecurity tasks with reminders (e.g., “Enable 2FA”), helping them stay organized and secure.
-Cybersecurity Quiz**: Includes a mini-game with 10+ questions, instant feedback, and a final score to reinforce learning.
-NLP Simulation**: Understands user intent through flexible phrasing (e.g., “Remind me to update my password”).
-Activity Log**: Tracks and displays the last few actions (like added tasks, quiz attempts, and reminders).
+Task Assistant: Lets users add cybersecurity tasks with reminders (e.g., “Enable 2FA”), helping them stay organized and secure.
+Cybersecurity Quiz: Includes a mini-game with 10+ questions, instant feedback, and a final score to reinforce learning.
+NLP Simulation: Understands user intent through flexible phrasing (e.g., “Remind me to update my password”).
+Activity Log: Tracks and displays the last few actions (like added tasks, quiz attempts, and reminders).
+Interactive Game: Tic Tac Toe game for the user to play to keep the intrested
 
-#### 🛠️ **Built With**
+Built With
 
-C# (WPF & XAML)** for GUI and application logic
-OOP Principles** (classes like `CybersecurityTask`)
-String manipulation** for basic NLP
-Lists & Dictionaries** to store tasks, logs, and chatbot memory
+C# (WPF & XAML) for GUI and application logic
+OOP Principles (classes like `CybersecurityTask`)
+String manipulation for basic NLP
+Lists & Dictionaries to store tasks, logs, and chatbot memory
 
 
 
